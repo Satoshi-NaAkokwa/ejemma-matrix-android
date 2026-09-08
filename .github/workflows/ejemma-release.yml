@@ -23,21 +23,28 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
         with:
-          components: |
-            platform-tools
-            platforms;android-36
-            build-tools;36.0.0
+          packages: 'platform-tools;platforms;android-36;build-tools;36.0.0'
 
       - name: Decode release keystore
         run: |
           echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > app/ejemma-release.keystore
+
+      - name: Override Gradle memory for CI build
+        run: |
+          cat >> gradle.properties <<'EOF'
+          org.gradle.jvmargs=-Xmx8g -XX:MaxMetaspaceSize=2g -Dfile.encoding=UTF-8 -XX:+UseG1GC
+          org.gradle.parallel=true
+          org.gradle.workers.max=4
+          org.gradle.caching=true
+          EOF
 
       - name: Build F-Droid release APK
         env:
           EJEMMA_KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
           EJEMMA_KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
-          ./gradlew :app:assembleFdroidRelease --no-daemon -PuseLegacyPackaging=true
+          ./gradlew :app:assembleFdroidRelease --no-daemon -PuseLegacyPackaging=true \
+            -Dkotlin.compiler.execution.strategy="in-process"
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4

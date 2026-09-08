@@ -24,8 +24,9 @@ class DefaultLocalNetworkPermissionAdvisor(
     private val buildVersionSdkIntProvider: BuildVersionSdkIntProvider,
 ) : LocalNetworkPermissionAdvisor {
     override suspend fun shouldRequestPermissionFor(homeserverUrl: String): Boolean {
-        if (!buildVersionSdkIntProvider.isAtLeast(Build.VERSION_CODES.CINNAMON_BUN)) return false
-        if (permissionStateProvider.isPermissionGranted(Manifest.permission.ACCESS_LOCAL_NETWORK)) return false
+        // ACCESS_LOCAL_NETWORK / CINNAMON_BUN are API 37+; this build targets API 36.
+        if (!buildVersionSdkIntProvider.isAtLeast(37)) return false
+        if (permissionStateProvider.isPermissionGranted("android.permission.ACCESS_LOCAL_NETWORK")) return false
         return when (classifier.classify(homeserverUrl)) {
             LocalNetworkClassification.LocalIp -> true
             LocalNetworkClassification.PublicIp,
