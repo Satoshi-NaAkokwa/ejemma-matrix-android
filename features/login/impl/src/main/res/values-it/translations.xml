@@ -9,13 +9,13 @@
   <string name="screen_account_provider_signin_title">"Stai per accedere a %s"</string>
   <string name="screen_account_provider_signup_subtitle">"Qui è dove vivranno le tue conversazioni — proprio come useresti un fornitore di posta elettronica per conservare le tue email."</string>
   <string name="screen_account_provider_signup_title">"Stai per creare un account su %s"</string>
-  <string name="screen_change_account_provider_matrix_org_subtitle">"Matrix.org è un grande server gratuito nella rete pubblica Matrix per una comunicazione sicura e decentralizzata, gestito da Matrix.org Foundation."</string>
+  <string name="screen_change_account_provider_matrix_org_subtitle">"matrix.ugogbe.info è un grande server gratuito nella rete pubblica Matrix per una comunicazione sicura e decentralizzata, gestito da matrix.ugogbe.info Foundation."</string>
   <string name="screen_change_account_provider_other">"Altro"</string>
   <string name="screen_change_account_provider_subtitle">"Utilizza un provider di account diverso, ad esempio il tuo server privato o un account di lavoro."</string>
   <string name="screen_change_account_provider_title">"Cambia fornitore dell\'account"</string>
   <string name="screen_change_server_error_element_pro_required_action_android">"Google Play"</string>
-  <string name="screen_change_server_error_element_pro_required_message">"L\'app Element Pro è necessaria su %1$s. Scaricala dallo store."</string>
-  <string name="screen_change_server_error_element_pro_required_title">"Element Pro è richiesto"</string>
+  <string name="screen_change_server_error_element_pro_required_message">"L\'app EJEMMA Pro è necessaria su %1$s. Scaricala dallo store."</string>
+  <string name="screen_change_server_error_element_pro_required_title">"EJEMMA Pro è richiesto"</string>
   <string name="screen_change_server_error_invalid_homeserver">"Non è stato possibile contattare il gestorehomeserver di questo account. Verifica di aver inserito correttamente l\'URL dell\'homeserver. Se l\'URL è corretto, contatta il gestore del tuo account per ulteriore assistenza."</string>
   <string name="screen_change_server_error_invalid_well_known">"Il server non è disponibile per un problema nel file well-known:
 %1$s"</string>
@@ -29,7 +29,7 @@
   <string name="screen_change_server_navigation_title_register">"Crea account"</string>
   <string name="screen_change_server_subtitle">"Qual è l\'indirizzo del tuo server?"</string>
   <string name="screen_change_server_textfield_footer_login">"Se il tuo account è fornito dalla tua azienda o da una comunità, cambia il gestore dell\'account (esempio: companyname.com)."</string>
-  <string name="screen_change_server_textfield_footer_register">"Crea un account gratuito su matrix.org. Se desideri creare un account con un provider diverso, modificalo di conseguenza (esempio: communityname.org)."</string>
+  <string name="screen_change_server_textfield_footer_register">"Crea un account gratuito su matrix.ugogbe.info. Se desideri creare un account con un provider diverso, modificalo di conseguenza (esempio: communityname.org)."</string>
   <string name="screen_change_server_textfield_header">"Gestore dell\'account"</string>
   <string name="screen_change_server_textfield_placeholder">"esempio.com"</string>
   <string name="screen_change_server_title">"Seleziona il tuo server"</string>
@@ -45,8 +45,8 @@
   <string name="screen_login_subtitle">"Matrix è una rete aperta per comunicazioni sicure e decentralizzate."</string>
   <string name="screen_login_title">"Bentornato!"</string>
   <string name="screen_login_title_with_homeserver">"Accedi a %1$s"</string>
-  <string name="screen_missing_key_backup_open_element_classic">"Apri Element Classic"</string>
-  <string name="screen_missing_key_backup_step_1">"Apri Element Classic sul tuo dispositivo"</string>
+  <string name="screen_missing_key_backup_open_element_classic">"Apri your previous Matrix app"</string>
+  <string name="screen_missing_key_backup_step_1">"Apri your previous Matrix app sul tuo dispositivo"</string>
   <string name="screen_missing_key_backup_step_2_android">"Vai su Impostazioni &gt; Sicurezza &amp; privacy"</string>
   <string name="screen_missing_key_backup_step_3_android">"Nella gestione delle chiavi crittografiche, seleziona Recupero dei messaggi cifrati"</string>
   <string name="screen_missing_key_backup_step_4">"Segui le istruzioni per abilitare l\'archiviazione delle chiavi"</string>
@@ -108,7 +108,7 @@ Prova ad accedere manualmente o scansiona il codice QR con un altro dispositivo.
   <string name="screen_qr_code_login_verify_code_subtitle">"Il fornitore dell\'account potrebbe richiedere il seguente codice per verificare l\'accesso."</string>
   <string name="screen_qr_code_login_verify_code_title">"Il tuo codice di verifica"</string>
   <string name="screen_server_confirmation_change_server">"Cambia fornitore dell\'account"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"Un server privato per i dipendenti di Element."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"Un server privato per i dipendenti di EJEMMA Matrix."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix è una rete aperta per comunicazioni sicure e decentralizzate."</string>
   <string name="screen_server_confirmation_message_register">"Qui è dove vivranno le tue conversazioni — proprio come useresti un fornitore di posta elettronica per conservare le tue email."</string>
   <string name="screen_server_confirmation_title_login">"Stai per accedere a %1$s"</string>

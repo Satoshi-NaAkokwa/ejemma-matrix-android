@@ -9,13 +9,13 @@
   <string name="screen_account_provider_signin_title">"Du bist dabei, dich bei %s anzumelden"</string>
   <string name="screen_account_provider_signup_subtitle">"Hier werden deine Gespräche gespeichert – so wie du deine E-Mails bei einem E-Mail-Anbieter aufbewahren würdest."</string>
   <string name="screen_account_provider_signup_title">"Du bist dabei, ein Konto bei %s zu erstellen"</string>
-  <string name="screen_change_account_provider_matrix_org_subtitle">"Matrix.org ist ein großer, kostenloser Server im öffentlichen Matrix-Netzwerk für eine sichere, dezentralisierte Kommunikation, der von der Matrix.org Foundation betrieben wird."</string>
+  <string name="screen_change_account_provider_matrix_org_subtitle">"matrix.ugogbe.info ist ein großer, kostenloser Server im öffentlichen Matrix-Netzwerk für eine sichere, dezentralisierte Kommunikation, der von der matrix.ugogbe.info Foundation betrieben wird."</string>
   <string name="screen_change_account_provider_other">"Sonstige"</string>
   <string name="screen_change_account_provider_subtitle">"Verwende einen anderen Kontoanbieter, z. B. deinen eigenen privaten Server oder ein Geschäftskonto."</string>
   <string name="screen_change_account_provider_title">"Kontoanbieter wechseln"</string>
   <string name="screen_change_server_error_element_pro_required_action_android">"Google Play"</string>
-  <string name="screen_change_server_error_element_pro_required_message">"Auf %1$s ist die Element Pro App erforderlich. Bitte lade diese aus dem Store."</string>
-  <string name="screen_change_server_error_element_pro_required_title">"Element Pro erforderlich"</string>
+  <string name="screen_change_server_error_element_pro_required_message">"Auf %1$s ist die EJEMMA Pro App erforderlich. Bitte lade diese aus dem Store."</string>
+  <string name="screen_change_server_error_element_pro_required_title">"EJEMMA Pro erforderlich"</string>
   <string name="screen_change_server_error_invalid_homeserver">"Wir konnten diesen Kontoanbieter nicht erreichen. Bitte überprüfe, ob du die Homeserver-URL korrekt eingegeben hast. Wenn die URL korrekt ist, wende dich an deinen Kontoanbieter, um weitere Hilfe zu erhalten."</string>
   <string name="screen_change_server_error_invalid_well_known">"Der Server ist aufgrund eines Problems in der Datei .well-known nicht verfügbar:
 %1$s"</string>
@@ -29,7 +29,7 @@
   <string name="screen_change_server_navigation_title_register">"Konto erstellen"</string>
   <string name="screen_change_server_subtitle">"Wie lautet die Adresse deines Servers?"</string>
   <string name="screen_change_server_textfield_footer_login">"Wenn dein Konto von deinem Unternehmen oder einer Community bereitgestellt wird, ändere den Kontoanbieter (Beispiel: firmenname.com)."</string>
-  <string name="screen_change_server_textfield_footer_register">"Erstelle kostenlos ein Konto auf matrix.org. Wenn du ein Konto bei einem anderen Anbieter erstellen möchtest, passe die Eingabe entsprechend an (Beispiel: communityname.org)."</string>
+  <string name="screen_change_server_textfield_footer_register">"Erstelle kostenlos ein Konto auf matrix.ugogbe.info. Wenn du ein Konto bei einem anderen Anbieter erstellen möchtest, passe die Eingabe entsprechend an (Beispiel: communityname.org)."</string>
   <string name="screen_change_server_textfield_header">"Kontoanbieter"</string>
   <string name="screen_change_server_textfield_placeholder">"example.com"</string>
   <string name="screen_change_server_title">"Wähle deinen Server aus"</string>
@@ -45,8 +45,8 @@
   <string name="screen_login_subtitle">"Matrix ist ein offenes Netzwerk für eine sichere, dezentrale Kommunikation."</string>
   <string name="screen_login_title">"Willkommen zurück!"</string>
   <string name="screen_login_title_with_homeserver">"Anmelden bei %1$s"</string>
-  <string name="screen_missing_key_backup_open_element_classic">"Element Classic öffnen"</string>
-  <string name="screen_missing_key_backup_step_1">"Öffne Element Classic auf deinem Gerät"</string>
+  <string name="screen_missing_key_backup_open_element_classic">"your previous Matrix app öffnen"</string>
+  <string name="screen_missing_key_backup_step_1">"Öffne your previous Matrix app auf deinem Gerät"</string>
   <string name="screen_missing_key_backup_step_2_android">"Geh zu Einstellungen &gt; Sicherheit &amp; Datenschutz"</string>
   <string name="screen_missing_key_backup_step_3_android">"Wähle unter „Verwaltung der Verschlüsselungs-Schlüssel“ den Eintrag „Wiederherstellung verschlüsselter Nachrichten“"</string>
   <string name="screen_missing_key_backup_step_4">"Folge den Anweisungen, um deinen Schlüsselspeicher zu aktivieren"</string>
@@ -61,7 +61,7 @@
   <string name="screen_onboarding_welcome_back">"Willkommen zurück"</string>
   <string name="screen_onboarding_welcome_message">"Willkommen beim schnellsten %1$s aller Zeiten. Optimiert für Geschwindigkeit und Einfachheit."</string>
   <string name="screen_onboarding_welcome_subtitle">"Willkommen zu %1$s. Aufgeladen, für Geschwindigkeit und Einfachheit."</string>
-  <string name="screen_onboarding_welcome_title">"Sei in deinem Element"</string>
+  <string name="screen_onboarding_welcome_title">"Sei in deinem EJEMMA Matrix"</string>
   <string name="screen_qr_code_login_connecting_subtitle">"Sichere Verbindung wird aufgebaut"</string>
   <string name="screen_qr_code_login_connection_note_secure_state_description">"Es konnte keine sichere Verbindung zu dem neuen Gerät hergestellt werden."</string>
   <string name="screen_qr_code_login_connection_note_secure_state_list_header">"Und jetzt?"</string>
@@ -108,7 +108,7 @@ Versuche, dich manuell anzumelden, oder scanne den QR-Code mit einem anderen Ger
   <string name="screen_qr_code_login_verify_code_subtitle">"Dein Kontoanbieter fragt möglicherweise nach dem folgenden Code, um die Anmeldung zu bestätigen."</string>
   <string name="screen_qr_code_login_verify_code_title">"Dein Verifizierungscode"</string>
   <string name="screen_server_confirmation_change_server">"Kontoanbieter wechseln"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"Ein privater Server für die Mitarbeiter von Element."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"Ein privater Server für die Mitarbeiter von EJEMMA Matrix."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix ist ein offenes Netzwerk für eine sichere, dezentrale Kommunikation."</string>
   <string name="screen_server_confirmation_message_register">"Hier werden deine Gespräche gespeichert – so wie du deine E-Mails bei einem E-Mail-Anbieter aufbewahren würdest."</string>
   <string name="screen_server_confirmation_title_login">"Du bist dabei, dich bei %1$s anzumelden"</string>

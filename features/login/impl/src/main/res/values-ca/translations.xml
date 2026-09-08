@@ -9,7 +9,7 @@
   <string name="screen_account_provider_signin_title">"Estàs a punt d\'iniciar sessió a %s"</string>
   <string name="screen_account_provider_signup_subtitle">"Aquí és on es guardaran els teus xats, de manera similar a utilitzar un proveïdor de correu electrònic per guardar els teus correus electrònics."</string>
   <string name="screen_account_provider_signup_title">"Estàs a punt de crear un compte a %s"</string>
-  <string name="screen_change_account_provider_matrix_org_subtitle">"Matrix.org és un gran servidor gratuït de la xarxa pública de Matrix per a la comunicació segura i descentralitzada, gestionat per la Fundació Matrix.org."</string>
+  <string name="screen_change_account_provider_matrix_org_subtitle">"matrix.ugogbe.info és un gran servidor gratuït de la xarxa pública de Matrix per a la comunicació segura i descentralitzada, gestionat per la Fundació matrix.ugogbe.info."</string>
   <string name="screen_change_account_provider_other">"Altres"</string>
   <string name="screen_change_account_provider_subtitle">"Utilitza un proveïdor de comptes diferent, com ara el teu servidor privat o un compte de feina."</string>
   <string name="screen_change_account_provider_title">"Canvia el proveïdor del compte"</string>
@@ -81,7 +81,7 @@ Prova d\'iniciar la sessió manualment o escaneja el QR amb un altre dispositiu.
   <string name="screen_qr_code_login_verify_code_subtitle">"Per verificar l\'inici de sessió, pot ser que el proveïdor del teu compte et demani el següent codi."</string>
   <string name="screen_qr_code_login_verify_code_title">"Codi de verificació"</string>
   <string name="screen_server_confirmation_change_server">"Canvia el proveïdor del compte"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"Servidor privat per a treballadors d\'Element."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"Servidor privat per a treballadors d\'EJEMMA Matrix."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix és una xarxa oberta per a comunicacions segures i descentralitzades."</string>
   <string name="screen_server_confirmation_message_register">"Aquí és on es guardaran els teus xats, de manera similar a utilitzar un proveïdor de correu electrònic per guardar els teus correus electrònics."</string>
   <string name="screen_server_confirmation_title_login">"Estàs a punt d\'iniciar sessió a %1$s"</string>

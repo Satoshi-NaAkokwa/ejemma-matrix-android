@@ -9,7 +9,7 @@
   <string name="screen_account_provider_signin_title">"თქვენ აპირებთ შესვლას %s-ში"</string>
   <string name="screen_account_provider_signup_subtitle">"აქ იქნება თქვენი საუბრები - ისევე, როგორც თქვენ ელ. ფოსტაში ინახება თქვენი ელ.წერილები."</string>
   <string name="screen_account_provider_signup_title">"თქვენ აპირებთ ანგარიშის შექმნას %s-ში"</string>
-  <string name="screen_change_account_provider_matrix_org_subtitle">"Matrix.org არის დიდი, უფასო სერვერი საჯარო Matrix ქსელში უსაფრთხო, დეცენტრალიზებული კომუნიკაციისთვის, რომელსაც მართავს Matrix.org ფონდი."</string>
+  <string name="screen_change_account_provider_matrix_org_subtitle">"matrix.ugogbe.info არის დიდი, უფასო სერვერი საჯარო Matrix ქსელში უსაფრთხო, დეცენტრალიზებული კომუნიკაციისთვის, რომელსაც მართავს matrix.ugogbe.info ფონდი."</string>
   <string name="screen_change_account_provider_other">"სხვა"</string>
   <string name="screen_change_account_provider_subtitle">"გამოიყენეთ სხვა ანგარიშის პროვაიდერი, როგორიცაა თქვენი პირადი სერვერი ან სამუშაო ანგარიში."</string>
   <string name="screen_change_account_provider_title">"შეცვალეთ ანგარიშის მომწოდებელი"</string>
@@ -37,7 +37,7 @@
   <string name="screen_onboarding_welcome_title">"იყავი შენს element-ში"</string>
   <string name="screen_qr_code_login_invalid_scan_state_retry_button">"ხელახლა ცდა"</string>
   <string name="screen_server_confirmation_change_server">"შეცვალეთ ანგარიშის მომწოდებელი"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"კერძო სერვერი Element-ის თანამშრომლებისთვის."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"კერძო სერვერი EJEMMA Matrix-ის თანამშრომლებისთვის."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix არის ღია ქსელი უსაფრთხო, დეცენტრალიზებული კომუნიკაციისთვის."</string>
   <string name="screen_server_confirmation_message_register">"აქ იქნება თქვენი საუბრები - ისევე, როგორც თქვენ ელ. ფოსტაში ინახება თქვენი ელ.წერილები."</string>
   <string name="screen_server_confirmation_title_login">"თქვენ აპირებთ შესვლას %1$s-ში"</string>

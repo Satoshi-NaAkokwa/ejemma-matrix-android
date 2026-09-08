@@ -46,17 +46,17 @@ android {
         versionName = Versions.VERSION_NAME
 
         ndk {
-            abiFilters += listOf("armeabi-v7a", "arm64-v8a")
+            abiFilters += listOf("arm64-v8a")
         }
 
         // Ref: https://developer.android.com/studio/build/configure-apk-splits.html#configure-abi-split
         splits {
             // Configures multiple APKs based on ABI.
             abi {
-                // Disabled on this VPS build: produce a single universal release APK.
+                // Disabled on this VPS build: produce a single release APK.
                 isEnable = false
                 reset()
-                include("armeabi-v7a", "x86", "arm64-v8a", "x86_64")
+                include("arm64-v8a")
                 isUniversalApk = true
             }
         }
@@ -179,10 +179,14 @@ android {
         resources.pickFirsts += setOf(
             "META-INF/versions/9/OSGI-INF/MANIFEST.MF",
         )
-
         jniLibs {
-            useLegacyPackaging = project.findProperty("useLegacyPackaging")?.toString()?.toBoolean()
+            useLegacyPackaging = true
+            keepDebugSymbols = emptySet<String>()
         }
+        resources.excludes += setOf(
+            "**/*.js.map",
+            "assets/element-call/assets/*.js.map",
+        )
     }
 }
 

@@ -9,13 +9,13 @@
   <string name="screen_account_provider_signin_title">"أنت على وشك تسجيل الدخول إلى %s"</string>
   <string name="screen_account_provider_signup_subtitle">"هذا المكان الذي تقطن فيه رسائلك — تماماً كاستخدامك مزوّد بريد إلكتروني للاحتفاظ برسائل البريد خاصّتك فيه."</string>
   <string name="screen_account_provider_signup_title">"أنت على وشك إنشاء حساب في %s"</string>
-  <string name="screen_change_account_provider_matrix_org_subtitle">"إن Matrix.org سيرفر ضخم ومجاني في شبكة Matrix العامّة وُجِد من أجل مراسلات آمنة ولا مركزية، يُدار من قِبل مؤسسة Matrix.org."</string>
+  <string name="screen_change_account_provider_matrix_org_subtitle">"إن matrix.ugogbe.info سيرفر ضخم ومجاني في شبكة Matrix العامّة وُجِد من أجل مراسلات آمنة ولا مركزية، يُدار من قِبل مؤسسة matrix.ugogbe.info."</string>
   <string name="screen_change_account_provider_other">"غير ذلك"</string>
   <string name="screen_change_account_provider_subtitle">"استخدم مزوّد حسابات آخر كسيرفرك الخاص أو حساب عمل."</string>
   <string name="screen_change_account_provider_title">"تغيير مزوّد الحسابات"</string>
   <string name="screen_change_server_error_element_pro_required_action_android">"Google Play"</string>
-  <string name="screen_change_server_error_element_pro_required_message">"تطبيق Element Pro مطلوب على %1$s. يرجى تنزيله من المتجر."</string>
-  <string name="screen_change_server_error_element_pro_required_title">"Element Pro مطلوب"</string>
+  <string name="screen_change_server_error_element_pro_required_message">"تطبيق EJEMMA Pro مطلوب على %1$s. يرجى تنزيله من المتجر."</string>
+  <string name="screen_change_server_error_element_pro_required_title">"EJEMMA Pro مطلوب"</string>
   <string name="screen_change_server_error_invalid_homeserver">"لم نستطع الوصول لهذا السيرفر. رجاءً تحقق إذا ما كنت أدخلت عنوان الـURL بشكل صحيح. إذا كان الـURL صحيحاً فراسل إدارة السيرفر خاصتك لمزيد من المساعدة."</string>
   <string name="screen_change_server_error_invalid_well_known">"الخادم غير متاح بسبب مشكلة في ملف .well-known:
 %1$s"</string>
@@ -29,7 +29,7 @@
   <string name="screen_change_server_navigation_title_register">"إنشاء حساب"</string>
   <string name="screen_change_server_subtitle">"ما عنوان السيرفر خاصتك؟"</string>
   <string name="screen_change_server_textfield_footer_login">"إذا كان حسابك مقدمًا من شركتك أو مجتمع ما، فقم بتغيير مزود الحساب (مثال: companyname.com)."</string>
-  <string name="screen_change_server_textfield_footer_register">"أنشئ حسابًا على موقع matrix.org مجانًا. إذا كنت ترغب في إنشاء حساب مع مزود خدمة مختلف، فقم بتغييره وفقًا لذلك (مثال: communityname.org)."</string>
+  <string name="screen_change_server_textfield_footer_register">"أنشئ حسابًا على موقع matrix.ugogbe.info مجانًا. إذا كنت ترغب في إنشاء حساب مع مزود خدمة مختلف، فقم بتغييره وفقًا لذلك (مثال: communityname.org)."</string>
   <string name="screen_change_server_textfield_header">"مزود الحساب"</string>
   <string name="screen_change_server_textfield_placeholder">"example.com"</string>
   <string name="screen_change_server_title">"اختر خادمك"</string>
@@ -45,8 +45,8 @@
   <string name="screen_login_subtitle">"Matrix عبارة عن شبكة مفتوحة للاتصالات الآمنة واللا مركزية."</string>
   <string name="screen_login_title">"أهلاً بعودتك!"</string>
   <string name="screen_login_title_with_homeserver">"تسجيل الدخول إلى %1$s"</string>
-  <string name="screen_missing_key_backup_open_element_classic">"فتح Element Classic"</string>
-  <string name="screen_missing_key_backup_step_1">"افتح Element Classic على جهازك"</string>
+  <string name="screen_missing_key_backup_open_element_classic">"فتح your previous Matrix app"</string>
+  <string name="screen_missing_key_backup_step_1">"افتح your previous Matrix app على جهازك"</string>
   <string name="screen_missing_key_backup_step_2_android">"انتقل إلى الإعدادات &gt; الأمان والخصوصية"</string>
   <string name="screen_missing_key_backup_step_3_android">"في إدارة مفاتيح التشفير، اختر استرداد الرسائل المشفّرة"</string>
   <string name="screen_missing_key_backup_step_4">"اتبع التعليمات لتفعيل تخزين مفاتيحك"</string>
@@ -61,7 +61,7 @@
   <string name="screen_onboarding_welcome_back">"مرحبًا بعودتك"</string>
   <string name="screen_onboarding_welcome_message">"مرحباً بك في أسرع %1$s على الإطلاق. مزوَّد من أجل سرعةٍ وبساطة."</string>
   <string name="screen_onboarding_welcome_subtitle">"مرحباً بك في %1$s. المعزَّز، من أجل سرعةٍ وبساطة."</string>
-  <string name="screen_onboarding_welcome_title">"Be in your element"</string>
+  <string name="screen_onboarding_welcome_title">"Welcome to EJEMMA Matrix"</string>
   <string name="screen_qr_code_login_connecting_subtitle">"جارٍ إنشاء اتصال آمن"</string>
   <string name="screen_qr_code_login_connection_note_secure_state_description">"تعذّر إنشاء اتصال آمن بالجهاز الجديد. لا تزال أجهزتك الحالية آمنة ولا داعي للقلق بشأنها."</string>
   <string name="screen_qr_code_login_connection_note_secure_state_list_header">"ماذا الآن؟"</string>
@@ -108,7 +108,7 @@
   <string name="screen_qr_code_login_verify_code_subtitle">"قد يطلب موفّر حسابك الرمز التالي للتحقق من تسجيل الدخول."</string>
   <string name="screen_qr_code_login_verify_code_title">"رمز التحقق الخاص بك"</string>
   <string name="screen_server_confirmation_change_server">"تغيير مزوّد الحسابات"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"سيرفر خاص بموظّفي Element."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"سيرفر خاص بموظّفي EJEMMA Matrix."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix عبارة عن شبكة مفتوحة للاتصالات الآمنة واللا مركزية."</string>
   <string name="screen_server_confirmation_message_register">"هذا المكان الذي تقطن فيه رسائلك — تماماً كاستخدامك مزوّد بريد إلكتروني للاحتفاظ برسائل البريد خاصّتك فيه."</string>
   <string name="screen_server_confirmation_title_login">"أنت على وشك تسجيل الدخول إلى %1$s"</string>
