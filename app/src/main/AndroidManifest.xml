@@ -173,6 +173,10 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_providers" />
         </provider>
+        <activity
+            android:name=".wallet.WalletActivity"
+            android:exported="false"
+            android:theme="@style/Theme.EjemmaMatrix" />
     </application>
 
 </manifest>

@@ -89,6 +89,7 @@ fun HomeView(
     onConfirmRecoveryKeyClick: () -> Unit,
     onStartChatClick: () -> Unit,
     onCreateSpaceClick: () -> Unit,
+    onWalletClick: () -> Unit,
     onRoomSettingsClick: (roomId: RoomId) -> Unit,
     onMenuActionClick: (RoomListMenuAction) -> Unit,
     onReportRoomClick: (roomId: RoomId) -> Unit,
@@ -129,6 +130,7 @@ fun HomeView(
             onOpenSettings = { if (firstThrottler.canHandle()) onSettingsClick() },
             onStartChatClick = { if (firstThrottler.canHandle()) onStartChatClick() },
             onCreateSpaceClick = { if (firstThrottler.canHandle()) onCreateSpaceClick() },
+            onWalletClick = { if (firstThrottler.canHandle()) onWalletClick() },
             onMenuActionClick = onMenuActionClick,
         )
 
@@ -167,6 +169,7 @@ private fun HomeScaffold(
     onOpenSettings: () -> Unit,
     onStartChatClick: () -> Unit,
     onCreateSpaceClick: () -> Unit,
+    onWalletClick: () -> Unit,
     onMenuActionClick: (RoomListMenuAction) -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -215,6 +218,7 @@ private fun HomeScaffold(
                 },
                 onMenuActionClick = onMenuActionClick,
                 onOpenSettings = onOpenSettings,
+                onWalletClick = onWalletClick,
                 onAccountSwitch = {
                     state.eventSink(HomeEvent.SwitchToAccount(it))
                 },
@@ -380,6 +384,7 @@ internal fun HomeViewPreview(@PreviewParameter(HomeStatePreviewParam::class) sta
         onConfirmRecoveryKeyClick = {},
         onStartChatClick = {},
         onCreateSpaceClick = {},
+        onWalletClick = {},
         onRoomSettingsClick = {},
         onReportRoomClick = {},
         onMenuActionClick = {},
@@ -400,6 +405,7 @@ internal fun HomeViewA11yPreview() = ElementPreview {
         onConfirmRecoveryKeyClick = {},
         onStartChatClick = {},
         onCreateSpaceClick = {},
+        onWalletClick = {},
         onRoomSettingsClick = {},
         onReportRoomClick = {},
         onMenuActionClick = {},

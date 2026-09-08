@@ -181,7 +181,6 @@ android {
         )
         jniLibs {
             useLegacyPackaging = true
-            keepDebugSymbols = emptySet<String>()
         }
         resources.excludes += setOf(
             "**/*.js.map",

@@ -103,6 +103,7 @@ import kotlinx.collections.immutable.toImmutableList
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeTopBar(
+    onWalletClick: () -> Unit,
     selectedNavigationItem: HomeNavigationBarItem,
     currentUserAndNeighbors: ImmutableList<MatrixUser>,
     showAvatarIndicator: Boolean,
@@ -170,6 +171,7 @@ fun HomeTopBar(
                         onMenuActionClick = onMenuActionClick,
                         canReportBug = canReportBug,
                         spaceFiltersState = spaceFiltersState,
+                        onWalletClick = onWalletClick,
                     )
                 }
             },
@@ -198,6 +200,7 @@ private fun RowScope.RoomListMenuItems(
     onMenuActionClick: (RoomListMenuAction) -> Unit,
     canReportBug: Boolean,
     spaceFiltersState: SpaceFiltersState,
+    onWalletClick: () -> Unit,
 ) {
     IconButton(
         onClick = onToggleSearch,
@@ -254,6 +257,20 @@ private fun RowScope.RoomListMenuItems(
                     }
                 )
             }
+            DropdownMenuItem(
+                onClick = {
+                    showMenu = false
+                    onWalletClick()
+                },
+                text = { Text(stringResource(id = R.string.action_wallet)) },
+                leadingIcon = {
+                    Text(
+                        text = "₵",
+                        style = ElementTheme.typography.fontHeadingMdBold,
+                        color = ElementTheme.colors.iconSecondary,
+                    )
+                }
+            )
         }
     }
 }
@@ -454,6 +471,7 @@ private fun StatusEmojiBadge(
 @Composable
 internal fun HomeTopBarPreview() = ElementPreview {
     HomeTopBar(
+        onWalletClick = {},
         selectedNavigationItem = HomeNavigationBarItem.Chats,
         currentUserAndNeighbors = persistentListOf(aMatrixUser(id = "@id:domain", displayName = USER_NAME_ALICE)),
         showAvatarIndicator = false,
@@ -475,6 +493,7 @@ internal fun HomeTopBarPreview() = ElementPreview {
 @Composable
 internal fun HomeTopBarSpaceFiltersSelectedPreview() = ElementPreview {
     HomeTopBar(
+        onWalletClick = {},
         selectedNavigationItem = HomeNavigationBarItem.Chats,
         currentUserAndNeighbors = persistentListOf(aMatrixUser(id = "@id:domain", displayName = USER_NAME_ALICE)),
         showAvatarIndicator = false,
@@ -496,6 +515,7 @@ internal fun HomeTopBarSpaceFiltersSelectedPreview() = ElementPreview {
 @Composable
 internal fun HomeTopBarSpacesPreview() = ElementPreview {
     HomeTopBar(
+        onWalletClick = {},
         selectedNavigationItem = HomeNavigationBarItem.Spaces,
         currentUserAndNeighbors = persistentListOf(aMatrixUser(id = "@id:domain", displayName = USER_NAME_ALICE)),
         showAvatarIndicator = false,
@@ -517,6 +537,7 @@ internal fun HomeTopBarSpacesPreview() = ElementPreview {
 @Composable
 internal fun HomeTopBarWithIndicatorPreview() = ElementPreview {
     HomeTopBar(
+        onWalletClick = {},
         selectedNavigationItem = HomeNavigationBarItem.Chats,
         currentUserAndNeighbors = persistentListOf(aMatrixUser(id = "@id:domain", displayName = USER_NAME_ALICE)),
         showAvatarIndicator = true,
@@ -538,6 +559,7 @@ internal fun HomeTopBarWithIndicatorPreview() = ElementPreview {
 @Composable
 internal fun HomeTopBarWithStatusPreview() = ElementPreview {
     HomeTopBar(
+        onWalletClick = {},
         selectedNavigationItem = HomeNavigationBarItem.Chats,
         currentUserAndNeighbors = persistentListOf(
             aMatrixUser(
@@ -565,6 +587,7 @@ internal fun HomeTopBarWithStatusPreview() = ElementPreview {
 @Composable
 internal fun HomeTopBarMultiAccountPreview() = ElementPreview {
     HomeTopBar(
+        onWalletClick = {},
         selectedNavigationItem = HomeNavigationBarItem.Chats,
         currentUserAndNeighbors = aMatrixUserList().take(3).toImmutableList(),
         showAvatarIndicator = false,

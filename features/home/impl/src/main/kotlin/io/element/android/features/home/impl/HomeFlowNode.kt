@@ -9,6 +9,7 @@
 package io.element.android.features.home.impl
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Parcelable
 import androidx.activity.compose.LocalActivity
 import androidx.compose.runtime.Composable
@@ -153,6 +154,9 @@ class HomeFlowNode(
             RoomListMenuAction.ReportBug -> {
                 callback.navigateToBugReport()
             }
+            RoomListMenuAction.Wallet -> {
+                activity.startActivity(Intent().setClassName(activity, "io.element.android.x.wallet.WalletActivity"))
+            }
         }
     }
 
@@ -225,6 +229,7 @@ class HomeFlowNode(
                 onSettingsClick = callback::navigateToSettings,
                 onStartChatClick = callback::navigateToCreateRoom,
                 onCreateSpaceClick = callback::navigateToCreateSpace,
+                onWalletClick = {},
                 onSetUpRecoveryClick = callback::navigateToSetUpRecovery,
                 onConfirmRecoveryKeyClick = callback::navigateToEnterRecoveryKey,
                 onRoomSettingsClick = callback::navigateToRoomSettings,
