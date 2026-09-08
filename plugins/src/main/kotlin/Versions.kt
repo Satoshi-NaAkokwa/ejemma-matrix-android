@@ -62,6 +62,7 @@ object Versions {
      * When updating COMPILE_SDK, please also update BUILD_TOOLS_VERSION.
      */
     const val COMPILE_SDK = 36
+    const val TARGET_SDK = 36
 
     /**
      * Build tools version. Must be kept in sync with COMPILE_SDK.
@@ -69,11 +70,6 @@ object Versions {
      */
     @Suppress("unused")
     private const val BUILD_TOOLS_VERSION = "36.0.0"
-
-    /**
-     * Target SDK version. Should be kept up to date with COMPILE_SDK.
-     */
-    const val TARGET_SDK = 36
 
     /**
      * Minimum SDK version for FOSS builds.
