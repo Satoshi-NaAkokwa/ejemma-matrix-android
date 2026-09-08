@@ -68,7 +68,7 @@ class LoggedInPresenter(
     permissionsPresenterFactory: PermissionsPresenter.Factory,
 ) : Presenter<LoggedInState> {
     private val localNetworkPermissionsPresenter: PermissionsPresenter =
-        permissionsPresenterFactory.create(Manifest.permission.ACCESS_LOCAL_NETWORK)
+        permissionsPresenterFactory.create("android.permission.ACCESS_LOCAL_NETWORK")
 
     @Composable
     override fun present(): LoggedInState {
