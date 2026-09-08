@@ -8,12 +8,10 @@
 
 @file:Suppress("UnstableApiUsage")
 
-import com.android.build.api.variant.FilterConfiguration.FilterType.ABI
 import com.android.build.gradle.internal.tasks.factory.dependsOn
 import com.android.build.gradle.tasks.GenerateBuildConfig
-import com.google.firebase.appdistribution.gradle.firebaseAppDistribution
 import config.BuildTimeConfig
-import extension.AssetCopyTask
+// import extension.AssetCopyTask
 import extension.GitBranchNameValueSource
 import extension.GitRevisionValueSource
 import extension.allEnterpriseImpl
@@ -25,14 +23,14 @@ import extension.locales
 import extension.setupDependencyInjection
 import extension.testCommonDependencies
 import org.sonarqube.gradle.SonarResolverTask
-import java.util.Locale
+// import java.util.Locale
 
 plugins {
     id("io.element.android-compose-application")
     // When using precompiled plugins, we need to apply the firebase plugin like this
-    id(libs.plugins.firebaseAppDistribution.get().pluginId)
+    // id(libs.plugins.firebaseAppDistribution.get().pluginId)
     id("kotlin-parcelize")
-    alias(libs.plugins.licensee)
+    // alias(libs.plugins.licensee)
     alias(libs.plugins.kotlin.serialization)
     // To be able to update the firebase.xml files, uncomment and build the project
     // alias(libs.plugins.gms.google.services)
@@ -47,9 +45,8 @@ android {
         versionCode = Versions.VERSION_CODE
         versionName = Versions.VERSION_NAME
 
-        // Keep abiFilter for the universalApk
         ndk {
-            abiFilters += listOf("armeabi-v7a", "x86", "arm64-v8a", "x86_64")
+            abiFilters += listOf("armeabi-v7a", "arm64-v8a")
         }
 
         // Ref: https://developer.android.com/studio/build/configure-apk-splits.html#configure-abi-split
@@ -77,7 +74,7 @@ android {
             storePassword = "android"
         }
         register("release") {
-            storeFile = file("/root/agbara-wallet-build/keystore/ejemma-release.keystore")
+            storeFile = file("ejemma-release.keystore")
             storePassword = System.getenv("EJEMMA_KEYSTORE_PASSWORD") ?: ""
             keyAlias = "ejemma2026"
             keyPassword = System.getenv("EJEMMA_KEY_PASSWORD") ?: System.getenv("EJEMMA_KEYSTORE_PASSWORD") ?: ""
@@ -118,16 +115,6 @@ android {
                 oAuthRedirectSchemeBase,
             )
             signingConfig = signingConfigs.getByName("release")
-
-            optimization {
-                enable = false
-                keepRules {
-                    // Equivalent of adding `getDefaultProguardFile("proguard-android-optimize.txt")` (this is the default value).
-                    includeDefault = true
-                }
-                // Our custom keep rules are registered as `keepRules` source folders in the `androidComponents` block below,
-                // as the former `keepRules.files` DSL is deprecated since AGP 9.
-            }
         }
 
         register("nightly") {
@@ -144,28 +131,28 @@ android {
             matchingFallbacks += listOf("release")
             signingConfig = signingConfigs.getByName("nightly")
 
-            firebaseAppDistribution {
-                artifactType = "APK"
-                // We upload the universal APK to fix this error:
-                // "App Distribution found more than 1 output file for this variant.
-                // Please contact firebase-support@google.com for help using APK splits with App Distribution."
-                artifactPath = "$rootDir/app/build/outputs/apk/gplay/nightly/app-gplay-universal-nightly.apk"
-                // artifactType = "AAB"
-                // artifactPath = "$rootDir/app/build/outputs/bundle/nightly/app-nightly.aab"
-                releaseNotesFile = "tools/release/ReleaseNotesNightly.md"
-                groups = if (isEnterpriseBuild) {
-                    "enterprise-testers"
-                } else {
-                    "external-testers"
-                }
-                // This should not be required, but if I do not add the appId, I get this error:
-                // "App Distribution halted because it had a problem uploading the APK: [404] Requested entity was not found."
-                appId = if (isEnterpriseBuild) {
-                    "1:912726360885:android:3f7e1fe644d99d5a00427c"
-                } else {
-                    "1:912726360885:android:e17435e0beb0303000427c"
-                }
-            }
+            // firebaseAppDistribution {
+            //     artifactType = "APK"
+            //     // We upload the universal APK to fix this error:
+            //     // "App Distribution found more than 1 output file for this variant.
+            //     // Please contact firebase-support@google.com for help using APK splits with App Distribution."
+            //     artifactPath = "$rootDir/app/build/outputs/apk/gplay/nightly/app-gplay-universal-nightly.apk"
+            //     // artifactType = "AAB"
+            //     // artifactPath = "$rootDir/app/build/outputs/bundle/nightly/app-nightly.aab"
+            //     releaseNotesFile = "tools/release/ReleaseNotesNightly.md"
+            //     groups = if (isEnterpriseBuild) {
+            //         "enterprise-testers"
+            //     } else {
+            //         "external-testers"
+            //     }
+            //     // This should not be required, but if I do not add the appId, I get this error:
+            //     // "App Distribution halted because it had a problem uploading the APK: [404] Requested entity was not found."
+            //     appId = if (isEnterpriseBuild) {
+            //         "1:912726360885:android:3f7e1fe644d99d5a00427c"
+            //     } else {
+            //         "1:912726360885:android:e17435e0beb0303000427c"
+            //     }
+            // }
         }
     }
 
@@ -203,12 +190,12 @@ androidComponents {
     // map for the version codes last digit
     // x86 must have greater values than arm
     // 64 bits have greater value than 32 bits
-    val abiVersionCodes = mapOf(
-        "armeabi-v7a" to 1,
-        "arm64-v8a" to 2,
-        "x86" to 3,
-        "x86_64" to 4,
-    )
+    // val abiVersionCodes = mapOf(
+    //     "armeabi-v7a" to 1,
+    //     "arm64-v8a" to 2,
+    //     "x86" to 3,
+    //     "x86_64" to 4,
+    // )
 
     onVariants { variant ->
         // Register the R8 keep rules source folders for optimized build types (release, nightly).
@@ -235,21 +222,20 @@ androidComponents {
             }
         }
 
-        // Assigns a different version code for each output APK
-        // other than the universal APK.
-        variant.outputs.forEach { output ->
-            val name = output.filters.find { it.filterType == ABI }?.identifier
-
-            // Stores the value of abiCodes that is associated with the ABI for this variant.
-            val abiCode = abiVersionCodes[name] ?: 0
-            // Assigns the new version code to output.versionCode, which changes the version code
-            // for only the output APK, not for the variant itself.
-            output.versionCode.set((output.versionCode.orNull ?: 0) * 10 + abiCode)
-        }
+        // Disabled: no ABI splits on this VPS build, single universal APK.
+        // variant.outputs.forEach { output ->
+        //     val name = output.filters.find { it.filterType == ABI }?.identifier
+        //
+        //     // Stores the value of abiCodes that is associated with the ABI for this variant.
+        //     val abiCode = abiVersionCodes[name] ?: 0
+        //     // Assigns the new version code to output.versionCode, which changes the version code
+        //     // for only the output APK, not for the variant itself.
+        //     output.versionCode.set((output.versionCode.orNull ?: 0) * 10 + abiCode)
+        // }
     }
 
     val reportingExtension: ReportingExtension = project.extensions.getByType(ReportingExtension::class.java)
-    configureLicensesTasks(reportingExtension)
+    // configureLicensesTasks(reportingExtension)
 }
 
 // Configure the SonarQube plugin to wait for the resource generation tasks to complete before running the analysis.
@@ -313,50 +299,53 @@ tasks.withType<GenerateBuildConfig>().configureEach {
     android.defaultConfig.buildConfigFieldStr("GIT_BRANCH_NAME", gitBranchName)
 }
 
-licensee {
-    allow("Apache-2.0")
-    allow("MIT")
-    allow("BSD-2-Clause")
-    allow("BSD-3-Clause")
-    allow("EPL-1.0")
-    allowUrl("https://opensource.org/license/bsd-3-clause")
-    allowUrl("https://opensource.org/licenses/MIT")
-    allowUrl("https://developer.android.com/studio/terms.html")
-    allowUrl("https://www.zetetic.net/sqlcipher/license/")
-    allowUrl("https://jsoup.org/license")
-    allowUrl("https://asm.ow2.io/license.html")
-    allowUrl("https://www.gnu.org/licenses/agpl-3.0.txt")
-    allowUrl("https://github.com/mhssn95/compose-color-picker/blob/main/LICENSE")
-    ignoreDependencies("com.github.matrix-org", "matrix-analytics-events")
-    // Ignore dependency that are not third-party licenses to us.
-    ignoreDependencies(groupId = "io.element.android")
-}
+// licensee {
+//     allow("Apache-2.0")
+//     allow("MIT")
+//     allow("BSD-2-Clause")
+//     allow("BSD-3-Clause")
+//     allow("EPL-1.0")
+//     allow("AGPL-3.0")
+//     allow("LGPL-2.1")
+//     allow("LGPL-3.0")
+//     allowUrl("https://opensource.org/license/bsd-3-clause")
+//     allowUrl("https://opensource.org/licenses/MIT")
+//     allowUrl("https://developer.android.com/studio/terms.html")
+//     allowUrl("https://www.zetetic.net/sqlcipher/license/")
+//     allowUrl("https://jsoup.org/license")
+//     allowUrl("https://asm.ow2.io/license.html")
+//     allowUrl("https://www.gnu.org/licenses/agpl-3.0.txt")
+//     allowUrl("https://github.com/mhssn95/compose-color-picker/blob/main/LICENSE")
+//     ignoreDependencies("com.github.matrix-org", "matrix-analytics-events")
+//     // Ignore dependency that are not third-party licenses to us.
+//     ignoreDependencies(groupId = "io.element.android")
+// }
 
-fun Project.configureLicensesTasks(reportingExtension: ReportingExtension) {
-    androidComponents {
-        onVariants { variant ->
-            val capitalizedVariantName = variant.name.replaceFirstChar {
-                if (it.isLowerCase()) {
-                    it.titlecase(Locale.getDefault())
-                } else {
-                    it.toString()
-                }
-            }
-            val artifactsFile = reportingExtension.baseDirectory.file("licensee/android$capitalizedVariantName/artifacts.json")
-
-            val copyArtifactsTask =
-                project.tasks.register<AssetCopyTask>("copy${capitalizedVariantName}LicenseeReportToAssets") {
-                    inputFile.set(artifactsFile)
-                    targetFileName.set("licensee-artifacts.json")
-                }
-            variant.sources.assets?.addGeneratedSourceDirectory(
-                copyArtifactsTask,
-                AssetCopyTask::outputDirectory,
-            )
-            copyArtifactsTask.dependsOn("licenseeAndroid$capitalizedVariantName")
-        }
-    }
-}
+// fun Project.configureLicensesTasks(reportingExtension: ReportingExtension) {
+//     androidComponents {
+//         onVariants { variant ->
+//             val capitalizedVariantName = variant.name.replaceFirstChar {
+//                 if (it.isLowerCase()) {
+//                     it.titlecase(Locale.getDefault())
+//                 } else {
+//                     it.toString()
+//                 }
+//             }
+//             val artifactsFile = reportingExtension.baseDirectory.file("licensee/android$capitalizedVariantName/artifacts.json")
+//
+//             val copyArtifactsTask =
+//                 project.tasks.register<AssetCopyTask>("copy${capitalizedVariantName}LicenseeReportToAssets") {
+//                     inputFile.set(artifactsFile)
+//                     targetFileName.set("licensee-artifacts.json")
+//                 }
+//             variant.sources.assets?.addGeneratedSourceDirectory(
+//                 copyArtifactsTask,
+//                 AssetCopyTask::outputDirectory,
+//             )
+//             copyArtifactsTask.dependsOn("licenseeAndroid$capitalizedVariantName")
+//         }
+//     }
+// }
 
 configurations.all {
     resolutionStrategy {
