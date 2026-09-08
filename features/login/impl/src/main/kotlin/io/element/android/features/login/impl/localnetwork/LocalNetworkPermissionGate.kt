@@ -29,7 +29,7 @@ class LocalNetworkPermissionGate(
     permissionsPresenterFactory: PermissionsPresenter.Factory,
 ) {
     private val permissionsPresenter: PermissionsPresenter =
-        permissionsPresenterFactory.create(Manifest.permission.ACCESS_LOCAL_NETWORK)
+        permissionsPresenterFactory.create("android.permission.ACCESS_LOCAL_NETWORK")
 
     @Composable
     fun <T : Any> present(
