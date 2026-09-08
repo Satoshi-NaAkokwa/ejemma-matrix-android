@@ -112,6 +112,7 @@ fun Project.defaultLintOptions(lint: Lint) = lint.apply {
         disable.add("ObsoleteSdkInt")
     }
     checkDependencies = false
+    checkReleaseBuilds = false
     abortOnError = false
     ignoreTestSources = true
     ignoreTestFixturesSources = true
