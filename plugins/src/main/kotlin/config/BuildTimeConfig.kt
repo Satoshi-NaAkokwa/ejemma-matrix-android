@@ -10,7 +10,7 @@ package config
 
 object BuildTimeConfig {
     const val APPLICATION_ID = "com.ejemma.matrix"
-    const val APPLICATION_NAME = "EJEMMA Matrix"
+    const val APPLICATION_NAME = "EJEMMA"
     val METADATA_HOST_REVERSED: String? = "info.ugogbe.wallet"
     val OAUTH_CLIENT_URL_PATH: String? = "apps/android"
     val URL_WEBSITE: String? = null

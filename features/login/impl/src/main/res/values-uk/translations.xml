@@ -108,7 +108,7 @@
   <string name="screen_qr_code_login_verify_code_subtitle">"Постачальник облікового запису може попросити вас ввести код нижче для підтвердження входу."</string>
   <string name="screen_qr_code_login_verify_code_title">"Ваш код підтвердження"</string>
   <string name="screen_server_confirmation_change_server">"Змінити провайдера облікового запису"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"Приватний сервер для співробітників EJEMMA Matrix."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"Приватний сервер для співробітників EJEMMA."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix — це відкрита мережа для безпечної, децентралізованої комунікації."</string>
   <string name="screen_server_confirmation_message_register">"Тут розміщуватимуться ваші розмови — так само як у поштовій скриньці для зберігання своїх електронних листів."</string>
   <string name="screen_server_confirmation_title_login">"Ви збираєтесь увійти в %1$s"</string>

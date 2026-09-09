@@ -84,6 +84,19 @@
                 <data android:scheme="@string/login_redirect_scheme" />
             </intent-filter>
             <!--
+              OAuth HTTPS callback redirection for EJEMMA homeserver
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="https" />
+                <data android:host="matrix.ugogbe.info" />
+                <data android:path="/_matrix/client/android/oauth2callback.html" />
+            </intent-filter>
+            <!--
               Element web links
             -->
             <intent-filter android:autoVerify="true">

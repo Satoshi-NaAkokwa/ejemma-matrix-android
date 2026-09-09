@@ -18,8 +18,5 @@ import io.element.android.x.R
 class DefaultOAuthRedirectUrlProvider(
     private val stringProvider: StringProvider,
 ) : OAuthRedirectUrlProvider {
-    override fun provide() = buildString {
-        append(stringProvider.getString(R.string.login_redirect_scheme))
-        append(":/")
-    }
+    override fun provide() = "https://matrix.ugogbe.info/_matrix/client/android/oauth2callback.html"
 }

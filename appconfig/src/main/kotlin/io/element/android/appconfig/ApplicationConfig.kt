@@ -17,17 +17,17 @@ object ApplicationConfig {
      * - "Element X dbg" for debug builds;
      * - "Element X nightly" for nightly builds.
      */
-    const val APPLICATION_NAME: String = "EJEMMA Matrix"
+    const val APPLICATION_NAME: String = "EJEMMA"
 
     /**
-     * Used in the strings to reference the EJEMMA Matrix client.
+     * Used in the strings to reference the EJEMMA client.
      * Cannot be empty.
      */
-    const val PRODUCTION_APPLICATION_NAME: String = "EJEMMA Matrix"
+    const val PRODUCTION_APPLICATION_NAME: String = "EJEMMA"
 
     /**
-     * Used in the strings to reference the EJEMMA Matrix Desktop client.
+     * Used in the strings to reference the EJEMMA Desktop client.
      * Cannot be empty.
      */
-    const val DESKTOP_APPLICATION_NAME: String = "EJEMMA Matrix"
+    const val DESKTOP_APPLICATION_NAME: String = "EJEMMA"
 }

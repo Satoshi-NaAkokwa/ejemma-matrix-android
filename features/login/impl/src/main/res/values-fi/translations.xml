@@ -108,7 +108,7 @@ Yritä kirjautua sisään manuaalisesti tai skannaa QR-koodi toisella laitteella
   <string name="screen_qr_code_login_verify_code_subtitle">"Palveluntarjoajasi saattaa kysyä seuraavaa koodia kirjautumisen vahvistamiseksi."</string>
   <string name="screen_qr_code_login_verify_code_title">"Vahvistuskoodisi"</string>
   <string name="screen_server_confirmation_change_server">"Vaihda palveluntarjoajaa"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"Yksityinen palvelin EJEMMA Matrixin työntekijöille."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"Yksityinen palvelin EJEMMAin työntekijöille."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix on avoin verkko turvallista, hajautettua viestintää varten."</string>
   <string name="screen_server_confirmation_message_register">"Keskustelusi asuvat täällä — aivan kuten aivan kuten käyttäisit sähköpostipalveluntarjoajaa sähköpostiesi säilyttämiseen."</string>
   <string name="screen_server_confirmation_title_login">"Olet kirjautumassa sisään %1$s-palvelimelle"</string>

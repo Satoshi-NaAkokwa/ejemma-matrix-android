@@ -61,7 +61,7 @@
   <string name="screen_onboarding_welcome_back">"歡迎回來"</string>
   <string name="screen_onboarding_welcome_message">"歡迎使用有史以來最快的 %1$s。速度超快，操作簡便。"</string>
   <string name="screen_onboarding_welcome_subtitle">"歡迎使用 %1$s。速度超快且簡單。"</string>
-  <string name="screen_onboarding_welcome_title">"Welcome to EJEMMA Matrix"</string>
+  <string name="screen_onboarding_welcome_title">"Welcome to EJEMMA"</string>
   <string name="screen_qr_code_login_connecting_subtitle">"建立安全連線"</string>
   <string name="screen_qr_code_login_connection_note_secure_state_description">"無法與新裝置建立安全連線。您現有的裝置仍然安全，您不必擔心它們。"</string>
   <string name="screen_qr_code_login_connection_note_secure_state_list_header">"現在怎麼辦？"</string>
@@ -108,7 +108,7 @@
   <string name="screen_qr_code_login_verify_code_subtitle">"您的帳號提供者可能會要求以下代碼以驗證登入。"</string>
   <string name="screen_qr_code_login_verify_code_title">"您的驗證碼"</string>
   <string name="screen_server_confirmation_change_server">"更改帳號提供者"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"供 EJEMMA Matrix 員工使用的私人伺服器。"</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"供 EJEMMA 員工使用的私人伺服器。"</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix 是一個開放網路，為了安全且去中心化的通訊而生。"</string>
   <string name="screen_server_confirmation_message_register">"您的所有對話將保存於此，就如同您的電子郵件供應商會保存您的電子郵件一樣。"</string>
   <string name="screen_server_confirmation_title_login">"您即將登入 %1$s"</string>

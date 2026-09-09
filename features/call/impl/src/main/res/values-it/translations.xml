@@ -3,6 +3,6 @@
   <string name="call_foreground_service_channel_title_android">"Chiamata in corso"</string>
   <string name="call_foreground_service_message_android">"Tocca per tornare alla chiamata"</string>
   <string name="call_foreground_service_title_android">"☎️ Chiamata in corso"</string>
-  <string name="call_invalid_audio_device_bluetooth_devices_disabled">"EJEMMA Matrix Call non supporta l\'uso di dispositivi audio Bluetooth in questa versione di Android. Seleziona un dispositivo audio diverso."</string>
-  <string name="screen_incoming_call_subtitle_android">"Chiamata EJEMMA Matrix Call in arrivo"</string>
+  <string name="call_invalid_audio_device_bluetooth_devices_disabled">"EJEMMA Call non supporta l\'uso di dispositivi audio Bluetooth in questa versione di Android. Seleziona un dispositivo audio diverso."</string>
+  <string name="screen_incoming_call_subtitle_android">"Chiamata EJEMMA Call in arrivo"</string>
 </resources>

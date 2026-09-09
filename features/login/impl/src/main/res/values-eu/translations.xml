@@ -72,7 +72,7 @@ Saiatu saioa eskuz hasten, edo eskaneatu QR kodea beste gailu batean."</string>
   <string name="screen_qr_code_login_verify_code_subtitle">"Zure kontu-hornitzaileak hurrengo kodea eska diezazuke saio-hasiera egiaztatzeko."</string>
   <string name="screen_qr_code_login_verify_code_title">"Egiaztapen-kodea"</string>
   <string name="screen_server_confirmation_change_server">"Aldatu kontu-hornitzailea"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"EJEMMA Matrixeko langileentzako zerbitzari pribatua."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"EJEMMAeko langileentzako zerbitzari pribatua."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix komunikazio seguru eta deszentralizaturako sare irekia da."</string>
   <string name="screen_server_confirmation_title_login">"%1$s(e)n saioa hastear zaude"</string>
   <string name="screen_server_confirmation_title_picker_mode">"Aukeratu kontu-hornitzailea"</string>

@@ -46,7 +46,7 @@
   <string name="screen_qr_code_login_invalid_scan_state_retry_button">"Thử lại"</string>
   <string name="screen_qr_code_login_start_over_button">"Bắt đầu lại"</string>
   <string name="screen_server_confirmation_change_server">"Thay đổi nhà cung cấp tài khoản"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"Máy chủ riêng dành cho nhân viên của EJEMMA Matrix."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"Máy chủ riêng dành cho nhân viên của EJEMMA."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix là một mạng mở cho việc liên lạc an toàn và phi tập trung."</string>
   <string name="screen_server_confirmation_message_register">"Đây là nơi các cuộc trò chuyện của bạn sẽ được lưu — giống như bạn dùng nhà cung cấp email để giữ email của mình."</string>
   <string name="screen_server_confirmation_title_login">"Bạn sắp đăng nhập vào %1$s"</string>

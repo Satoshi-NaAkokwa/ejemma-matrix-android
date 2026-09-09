@@ -61,7 +61,7 @@
   <string name="screen_onboarding_welcome_back">"Witamy ponownie"</string>
   <string name="screen_onboarding_welcome_message">"Witamy w %1$s. Szybszy i prostszy niż kiedykolwiek."</string>
   <string name="screen_onboarding_welcome_subtitle">"Witamy w %1$s. Doładowany, dla szybkości i prostoty."</string>
-  <string name="screen_onboarding_welcome_title">"Welcome to EJEMMA Matrix"</string>
+  <string name="screen_onboarding_welcome_title">"Welcome to EJEMMA"</string>
   <string name="screen_qr_code_login_connecting_subtitle">"Nawiązanie bezpiecznego połączenia"</string>
   <string name="screen_qr_code_login_connection_note_secure_state_description">"Nie udało się nawiązać bezpiecznego połączenia z nowym urządzeniem. Twoje istniejące urządzenia są nadal bezpieczne i nie musisz się o nie martwić."</string>
   <string name="screen_qr_code_login_connection_note_secure_state_list_header">"Co teraz?"</string>
@@ -108,7 +108,7 @@ Spróbuj zalogować się ręcznie lub zeskanuj kod QR na innym urządzeniu."</st
   <string name="screen_qr_code_login_verify_code_subtitle">"Twój dostawca konta może poprosić o podany kod w celu weryfikacji logowania."</string>
   <string name="screen_qr_code_login_verify_code_title">"Twój kod weryfikacyjny"</string>
   <string name="screen_server_confirmation_change_server">"Zmień dostawcę konta"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"Serwer prywatny dla pracowników EJEMMA Matrix."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"Serwer prywatny dla pracowników EJEMMA."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix to otwarta sieć do bezpiecznej i zdecentralizowanej komunikacji."</string>
   <string name="screen_server_confirmation_message_register">"Tutaj będą przechowywane Twoje konwersacje - w podobnej formie jak wiadomości widnieją na skrzynce e-mail."</string>
   <string name="screen_server_confirmation_title_login">"Zamierzasz się zalogować do %1$s"</string>

@@ -108,7 +108,7 @@ Pokušajte se prijaviti ručno ili skenirajte QR kod drugim uređajem."</string>
   <string name="screen_qr_code_login_verify_code_subtitle">"Davatelj usluge računa može zatražiti sljedeći kod za potvrdu prijave."</string>
   <string name="screen_qr_code_login_verify_code_title">"Vaš verifikacijski kod"</string>
   <string name="screen_server_confirmation_change_server">"Promijeni davatelja usluga računa"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"Privatni poslužitelj za zaposlenike aplikacije EJEMMA Matrix."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"Privatni poslužitelj za zaposlenike aplikacije EJEMMA."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix je otvorena mreža za sigurnu, decentraliziranu komunikaciju."</string>
   <string name="screen_server_confirmation_message_register">"Ovdje će se čuvati vaši razgovori – baš kao što biste koristili davatelja usluga e-pošte za čuvanje svojih e-poruka."</string>
   <string name="screen_server_confirmation_title_login">"Prijavit ćete se na poslužitelj %1$s"</string>

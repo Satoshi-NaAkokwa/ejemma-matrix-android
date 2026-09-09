@@ -19,6 +19,8 @@ plugins {
     alias(libs.plugins.ksp) apply false
     alias(libs.plugins.dependencycheck) apply false
     alias(libs.plugins.roborazzi) apply false
+    alias(libs.plugins.gms.google.services) apply false
+    alias(libs.plugins.firebaseAppDistribution) apply false
     alias(libs.plugins.dependencyanalysis)
     alias(libs.plugins.detekt)
     alias(libs.plugins.ktlint)

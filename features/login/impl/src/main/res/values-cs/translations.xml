@@ -100,7 +100,7 @@ Zkuste se přihlásit ručně nebo naskenujte QR kód pomocí jiného zařízen�
   <string name="screen_qr_code_login_verify_code_subtitle">"Váš poskytovatel účtu může požádat o následující kód pro ověření přihlášení."</string>
   <string name="screen_qr_code_login_verify_code_title">"Váš ověřovací kód"</string>
   <string name="screen_server_confirmation_change_server">"Změnit poskytovatele účtu"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"Soukromý server pro zaměstnance EJEMMA Matrixu."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"Soukromý server pro zaměstnance EJEMMAu."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix je otevřená síť pro bezpečnou a decentralizovanou komunikaci."</string>
   <string name="screen_server_confirmation_message_register">"Zde budou uloženy vaše konverzace - podobně jako u poskytovatele e-mailových služeb uchováváte své e-maily."</string>
   <string name="screen_server_confirmation_title_login">"Chystáte se přihlásit do služby %1$s"</string>

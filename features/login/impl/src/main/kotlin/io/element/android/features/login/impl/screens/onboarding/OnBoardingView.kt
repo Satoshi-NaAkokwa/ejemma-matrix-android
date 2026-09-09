@@ -104,21 +104,31 @@ fun OnBoardingView(
         )
     }
 
-    if (state.isAddingAccount) {
-        AddOtherAccountScaffold(
-            modifier = modifier,
-            loginView = loginView,
-            buttons = buttons,
-            onBackClick = onBackClick,
-        )
-    } else {
-        AddFirstAccountScaffold(
-            modifier = modifier,
-            state = state,
-            loginView = loginView,
-            buttons = buttons,
-            onBackClick = onBackClick,
-            onDeveloperSettingsClick = onDeveloperSettingsClick,
+    Box(modifier = modifier.fillMaxSize()) {
+        if (state.isAddingAccount) {
+            AddOtherAccountScaffold(
+                modifier = Modifier.fillMaxSize(),
+                loginView = loginView,
+                buttons = buttons,
+                onBackClick = onBackClick,
+            )
+        } else {
+            AddFirstAccountScaffold(
+                modifier = Modifier.fillMaxSize(),
+                state = state,
+                loginView = loginView,
+                buttons = buttons,
+                onBackClick = onBackClick,
+                onDeveloperSettingsClick = onDeveloperSettingsClick,
+            )
+        }
+        Text(
+            text = "© Biafran Government in Exile",
+            style = ElementTheme.typography.fontBodySmMedium,
+            color = ElementTheme.colors.textSecondary.copy(alpha = 0.5f),
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .padding(bottom = 16.dp)
         )
     }
 }

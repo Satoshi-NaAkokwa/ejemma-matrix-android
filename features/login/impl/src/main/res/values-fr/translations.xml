@@ -61,7 +61,7 @@
   <string name="screen_onboarding_welcome_back">"Bon retour parmi nous"</string>
   <string name="screen_onboarding_welcome_message">"Bienvenue dans l’application %1$s la plus rapide de tous les temps. Boosté pour plus de rapidité et de simplicité."</string>
   <string name="screen_onboarding_welcome_subtitle">"Bienvenue sur %1$s. Boosté, pour plus de rapidité et de simplicité."</string>
-  <string name="screen_onboarding_welcome_title">"Soyez dans votre EJEMMA Matrix"</string>
+  <string name="screen_onboarding_welcome_title">"Soyez dans votre EJEMMA"</string>
   <string name="screen_qr_code_login_connecting_subtitle">"Établissement d’une connexion sécurisée"</string>
   <string name="screen_qr_code_login_connection_note_secure_state_description">"Aucune connexion sécurisée n’a pu être établie avec la nouvelle session. Vos sessions existantes sont toujours en sécurité et vous n’avez pas à vous en soucier."</string>
   <string name="screen_qr_code_login_connection_note_secure_state_list_header">"Et maintenant ?"</string>
@@ -106,7 +106,7 @@
   <string name="screen_qr_code_login_verify_code_subtitle">"Votre fournisseur de compte peut vous demander le code suivant pour vérifier la connexion."</string>
   <string name="screen_qr_code_login_verify_code_title">"Votre code de vérification"</string>
   <string name="screen_server_confirmation_change_server">"Changer de fournisseur de compte"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"Un serveur privé pour les employés d’EJEMMA Matrix."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"Un serveur privé pour les employés d’EJEMMA."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix est un réseau ouvert pour une communication sécurisée et décentralisée."</string>
   <string name="screen_server_confirmation_message_register">"C’est ici que vos conversations seront enregistrées, comme vous le feriez avec un fournisseur de messagerie pour conserver vos e-mails."</string>
   <string name="screen_server_confirmation_title_login">"Vous êtes sur le point de vous connecter à %1$s"</string>

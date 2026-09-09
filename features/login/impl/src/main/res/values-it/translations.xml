@@ -108,7 +108,7 @@ Prova ad accedere manualmente o scansiona il codice QR con un altro dispositivo.
   <string name="screen_qr_code_login_verify_code_subtitle">"Il fornitore dell\'account potrebbe richiedere il seguente codice per verificare l\'accesso."</string>
   <string name="screen_qr_code_login_verify_code_title">"Il tuo codice di verifica"</string>
   <string name="screen_server_confirmation_change_server">"Cambia fornitore dell\'account"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"Un server privato per i dipendenti di EJEMMA Matrix."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"Un server privato per i dipendenti di EJEMMA."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix è una rete aperta per comunicazioni sicure e decentralizzate."</string>
   <string name="screen_server_confirmation_message_register">"Qui è dove vivranno le tue conversazioni — proprio come useresti un fornitore di posta elettronica per conservare le tue email."</string>
   <string name="screen_server_confirmation_title_login">"Stai per accedere a %1$s"</string>

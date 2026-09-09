@@ -52,7 +52,7 @@
   <string name="screen_onboarding_welcome_back">"Xush kelibsiz."</string>
   <string name="screen_onboarding_welcome_message">"Eng tezkor %1$sga xush kelibsiz. Tezlik va oddiylik uchun super zaryadlangan."</string>
   <string name="screen_onboarding_welcome_subtitle">"%1$sga Xush kelibsiz. Tezlik va oddiylik uchun o\'ta zaryadlangan."</string>
-  <string name="screen_onboarding_welcome_title">"EJEMMA Matrixingizda bo\'ling"</string>
+  <string name="screen_onboarding_welcome_title">"EJEMMAingizda bo\'ling"</string>
   <string name="screen_qr_code_login_connecting_subtitle">"Xavfsiz aloqa oʻrnatish"</string>
   <string name="screen_qr_code_login_connection_note_secure_state_description">"Yangi qurilmaga xavfsiz ulanish amalga oshirilmadi. Mavjud qurilmalaringiz hali ham xavfsiz va ular haqida qaygʻurishingiz shart emas."</string>
   <string name="screen_qr_code_login_connection_note_secure_state_list_header">"Endi nima?"</string>
@@ -99,7 +99,7 @@ Oddiy usulda kiring yoki boshqa qurilma bilan QR kodni skanerlang."</string>
   <string name="screen_qr_code_login_verify_code_subtitle">"Hisob provayderingiz hisobga kirishni tasdiqlash uchun quyidagi kodni soʻrashi mumkin."</string>
   <string name="screen_qr_code_login_verify_code_title">"Tasdiqlash kodingiz"</string>
   <string name="screen_server_confirmation_change_server">"Hisob provayderini o\'zgartiring"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"EJEMMA Matrix xodimlari uchun shaxsiy server."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"EJEMMA xodimlari uchun shaxsiy server."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix xavfsiz, markazlashmagan aloqa uchun ochiq tarmoqdir."</string>
   <string name="screen_server_confirmation_message_register">"Bu sizning suhbatlaringiz yashaydigan joy - xuddi siz elektron pochta xabarlaringizni saqlash uchun elektron pochta provayderidan foydalanganingiz kabi."</string>
   <string name="screen_server_confirmation_title_login">"%1$s hisobiga kirmoqchisiz"</string>

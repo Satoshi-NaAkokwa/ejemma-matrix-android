@@ -89,7 +89,7 @@ Prova att logga in manuellt eller skanna QR-koden med en annan enhet."</string>
   <string name="screen_qr_code_login_verify_code_subtitle">"Din kontoleverantör kan be om följande kod för att verifiera inloggningen."</string>
   <string name="screen_qr_code_login_verify_code_title">"Din verifieringskod"</string>
   <string name="screen_server_confirmation_change_server">"Byt kontoleverantör"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"En privat server för EJEMMA Matrix-anställda."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"En privat server för EJEMMA-anställda."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix är ett öppet nätverk för säker, decentraliserad kommunikation."</string>
   <string name="screen_server_confirmation_message_register">"Det är här dina konversationer kommer att sparas - precis som du skulle använda en e-postleverantör för att spara dina e-brev."</string>
   <string name="screen_server_confirmation_title_login">"Du är på väg att logga in på %1$s"</string>

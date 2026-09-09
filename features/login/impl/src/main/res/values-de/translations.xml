@@ -61,7 +61,7 @@
   <string name="screen_onboarding_welcome_back">"Willkommen zurück"</string>
   <string name="screen_onboarding_welcome_message">"Willkommen beim schnellsten %1$s aller Zeiten. Optimiert für Geschwindigkeit und Einfachheit."</string>
   <string name="screen_onboarding_welcome_subtitle">"Willkommen zu %1$s. Aufgeladen, für Geschwindigkeit und Einfachheit."</string>
-  <string name="screen_onboarding_welcome_title">"Sei in deinem EJEMMA Matrix"</string>
+  <string name="screen_onboarding_welcome_title">"Sei in deinem EJEMMA"</string>
   <string name="screen_qr_code_login_connecting_subtitle">"Sichere Verbindung wird aufgebaut"</string>
   <string name="screen_qr_code_login_connection_note_secure_state_description">"Es konnte keine sichere Verbindung zu dem neuen Gerät hergestellt werden."</string>
   <string name="screen_qr_code_login_connection_note_secure_state_list_header">"Und jetzt?"</string>
@@ -108,7 +108,7 @@ Versuche, dich manuell anzumelden, oder scanne den QR-Code mit einem anderen Ger
   <string name="screen_qr_code_login_verify_code_subtitle">"Dein Kontoanbieter fragt möglicherweise nach dem folgenden Code, um die Anmeldung zu bestätigen."</string>
   <string name="screen_qr_code_login_verify_code_title">"Dein Verifizierungscode"</string>
   <string name="screen_server_confirmation_change_server">"Kontoanbieter wechseln"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"Ein privater Server für die Mitarbeiter von EJEMMA Matrix."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"Ein privater Server für die Mitarbeiter von EJEMMA."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix ist ein offenes Netzwerk für eine sichere, dezentrale Kommunikation."</string>
   <string name="screen_server_confirmation_message_register">"Hier werden deine Gespräche gespeichert – so wie du deine E-Mails bei einem E-Mail-Anbieter aufbewahren würdest."</string>
   <string name="screen_server_confirmation_title_login">"Du bist dabei, dich bei %1$s anzumelden"</string>

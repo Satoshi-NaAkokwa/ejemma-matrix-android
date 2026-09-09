@@ -152,7 +152,7 @@ class RustMatrixAuthenticationService(
                 client.login(
                     username = username,
                     password = password,
-                    initialDeviceName = "EJEMMA Matrix Android",
+                    initialDeviceName = "EJEMMA Android",
                     deviceId = null,
                 )
                 // Ensure that the user is not already logged in with the same account

@@ -108,7 +108,7 @@
   <string name="screen_qr_code_login_verify_code_subtitle">"Сервер для аккаунта может запросить следующий код для подтверждения входа."</string>
   <string name="screen_qr_code_login_verify_code_title">"Ваш код подтверждения"</string>
   <string name="screen_server_confirmation_change_server">"Сменить сервер"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"Частный сервер для сотрудников EJEMMA Matrix."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"Частный сервер для сотрудников EJEMMA."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"Matrix — это открытая сеть для безопасной децентрализованной связи."</string>
   <string name="screen_server_confirmation_message_register">"Здесь будут храниться ваши разговоры — точно так же, как вы используете электронную почту для хранения писем."</string>
   <string name="screen_server_confirmation_title_login">"Вы собираетесь войти в %1$s"</string>

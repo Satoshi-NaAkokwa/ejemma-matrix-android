@@ -100,7 +100,7 @@ Próbáljon meg kézileg bejelentkezni, vagy olvassa be a QR-kódot egy másik e
   <string name="screen_qr_code_login_verify_code_subtitle">"A fiókszolgáltatója kérheti a következő kódot a bejelentkezése ellenőrzéséhez."</string>
   <string name="screen_qr_code_login_verify_code_title">"Az Ön ellenőrzőkódja"</string>
   <string name="screen_server_confirmation_change_server">"Fiókszolgáltató módosítása"</string>
-  <string name="screen_server_confirmation_message_login_element_dot_io">"Egy privát kiszolgáló az EJEMMA Matrix alkalmazottai számára."</string>
+  <string name="screen_server_confirmation_message_login_element_dot_io">"Egy privát kiszolgáló az EJEMMA alkalmazottai számára."</string>
   <string name="screen_server_confirmation_message_login_matrix_dot_org">"A Matrix egy nyitott hálózat a biztonságos, decentralizált kommunikációhoz."</string>
   <string name="screen_server_confirmation_message_register">"Itt lesznek a beszélgetései – ahogyan egy e-mail-szolgáltatást is használna a levelei kezeléséhez."</string>
   <string name="screen_server_confirmation_title_login">"Hamarosan bejelentkezik ebbe: %1$s"</string>

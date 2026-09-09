@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "996691774071",
+    "project_id": "ejemma-acc77",
+    "storage_bucket": "ejemma-acc77.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996691774071:android:e703ef7b5d7cb2c5209472",
+        "android_client_info": {
+          "package_name": "com.ejemma.matrix"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtJgmTpVOy7Pzn6xftC0Tk80lGRitNQ8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
