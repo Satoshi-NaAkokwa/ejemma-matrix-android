@@ -53,11 +53,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ejemma-matrix-${{ github.event.inputs.variant }}
-          path: app/build/outputs/apk/*/${{ github.event.inputs.variant == 'gplayRelease' && 'gplay' || 'fdroid' }}/release/*.apk
+          path: app/build/outputs/apk/gplay/release/*.apk
           if-no-files-found: error
 
       - name: Publish release asset
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release upload latest app/build/outputs/apk/*/${{ github.event.inputs.variant == 'gplayRelease' && 'gplay' || 'fdroid' }}/release/*.apk --clobber --repo ${{ github.repository }}
+          gh release upload latest app/build/outputs/apk/gplay/release/*.apk --clobber --repo ${{ github.repository }}
