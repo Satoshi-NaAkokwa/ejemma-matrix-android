@@ -36,14 +36,15 @@ jobs:
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
-          mkdir -p /root/agbara-wallet-build/keystore
+          mkdir -p ${{ github.workspace }}/keystore
           echo "$GOOGLE_SERVICES_JSON" > app/google-services.json
-          echo "$KEYSTORE_BASE64" | base64 -d > /root/agbara-wallet-build/keystore/ejemma-release.keystore
+          echo "$KEYSTORE_BASE64" | base64 -d > ${{ github.workspace }}/keystore/ejemma-release.keystore
 
       - name: Build APK
         env:
           EJEMMA_KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
           EJEMMA_KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+          EJEMMA_KEYSTORE_PATH: ${{ github.workspace }}/keystore/ejemma-release.keystore
           ANDROID_HOME: ${{ env.ANDROID_SDK_ROOT }}
         run: |
           ./gradlew :app:assemble${{ github.event.inputs.variant }} --no-daemon --max-workers=2 -Dorg.gradle.jvmargs="-Xmx4g -XX:MaxMetaspaceSize=1g"

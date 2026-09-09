@@ -74,7 +74,8 @@ android {
             storePassword = "android"
         }
         register("release") {
-            storeFile = file("/root/agbara-wallet-build/keystore/ejemma-release.keystore")
+            val keystorePath = System.getenv("EJEMMA_KEYSTORE_PATH") ?: "/root/agbara-wallet-build/keystore/ejemma-release.keystore"
+            storeFile = file(keystorePath)
             storePassword = System.getenv("EJEMMA_KEYSTORE_PASSWORD") ?: ""
             keyAlias = "ejemma2026"
             keyPassword = System.getenv("EJEMMA_KEY_PASSWORD") ?: System.getenv("EJEMMA_KEYSTORE_PASSWORD") ?: ""
