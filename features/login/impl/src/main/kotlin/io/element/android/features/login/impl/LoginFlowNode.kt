@@ -157,8 +157,10 @@ class LoginFlowNode(
             is NavTarget.OnBoarding -> {
                 val callback = object : OnBoardingNode.Callback {
                     override fun navigateToSignUpFlow() {
-                        val context = buildContext.activity ?: return
-                        openUrlInChromeCustomTab(context, "https://idp.ugogbe.info/if/flow/default-source-enrollment/")
+                        activity?.let {
+                            externalAppStarted = true
+                            it.openUrlInChromeCustomTab(null, darkTheme, "https://idp.ugogbe.info/if/flow/default-source-enrollment/")
+                        }
                     }
 
                     override fun navigateToSignInFlow(mustChooseAccountProvider: Boolean) {
