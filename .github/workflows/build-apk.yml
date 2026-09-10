@@ -60,4 +60,5 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          gh release create latest --title "EJEMMA Matrix Latest" --notes "Latest build" --repo ${{ github.repository }} 2>/dev/null || true
           gh release upload latest app/build/outputs/apk/gplay/release/*.apk --clobber --repo ${{ github.repository }}
