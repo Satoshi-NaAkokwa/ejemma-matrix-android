@@ -157,9 +157,8 @@ class LoginFlowNode(
             is NavTarget.OnBoarding -> {
                 val callback = object : OnBoardingNode.Callback {
                     override fun navigateToSignUpFlow() {
-                        backstack.push(
-                            NavTarget.ConfirmAccountProvider(isAccountCreation = true)
-                        )
+                        val context = buildContext.activity ?: return
+                        openUrlInChromeCustomTab(context, "https://idp.ugogbe.info/if/flow/default-source-enrollment/")
                     }
 
                     override fun navigateToSignInFlow(mustChooseAccountProvider: Boolean) {
