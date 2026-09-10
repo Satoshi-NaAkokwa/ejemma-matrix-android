@@ -62,3 +62,31 @@ jobs:
         run: |
           gh release create latest --title "EJEMMA Matrix Latest" --notes "Latest build" --repo ${{ github.repository }} 2>/dev/null || true
           gh release upload latest app/build/outputs/apk/gplay/release/*.apk --clobber --repo ${{ github.repository }}
+
+      - name: Deploy APK to public download server
+        env:
+          VPS_DEPLOY_KEY: ${{ secrets.VPS_DEPLOY_KEY }}
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          VPS_USER: ${{ secrets.VPS_USER }}
+          VPS_APK_PATH: ${{ secrets.VPS_APK_PATH }}
+          VPS_CHECKSUMS_PATH: ${{ secrets.VPS_CHECKSUMS_PATH }}
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "$VPS_DEPLOY_KEY" > ~/.ssh/vps_deploy_key
+          chmod 600 ~/.ssh/vps_deploy_key
+          eval "$(ssh-agent -s)"
+          ssh-add ~/.ssh/vps_deploy_key
+          ssh-keyscan -H "$VPS_HOST" >> ~/.ssh/known_hosts 2>/dev/null || true
+          chmod 644 ~/.ssh/known_hosts
+
+          APK_FILE=$(ls app/build/outputs/apk/gplay/release/*.apk | head -n1)
+          APK_SHA=$(sha256sum "$APK_FILE" | awk '{print $1}')
+          APK_BASENAME=$(basename "$APK_FILE")
+          echo "Deploying $APK_BASENAME (SHA-256: $APK_SHA) to $VPS_USER@$VPS_HOST:$VPS_APK_PATH"
+
+          scp -o StrictHostKeyChecking=no -o IdentitiesOnly=yes -i ~/.ssh/vps_deploy_key "$APK_FILE" "$VPS_USER@$VPS_HOST:$VPS_APK_PATH"
+          ssh -o StrictHostKeyChecking=no -o IdentitiesOnly=yes -i ~/.ssh/vps_deploy_key "$VPS_USER@$VPS_HOST" "echo '$APK_SHA  $APK_BASENAME' > $VPS_CHECKSUMS_PATH && chown www-data:www-data $VPS_APK_PATH $VPS_CHECKSUMS_PATH && chmod 644 $VPS_APK_PATH $VPS_CHECKSUMS_PATH"
+
+          echo "Public download URL: https://ejemma.ugogbe.info/download/$APK_BASENAME"
+          echo "SHA-256: $APK_SHA"
