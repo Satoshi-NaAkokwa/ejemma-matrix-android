@@ -49,19 +49,12 @@ jobs:
         run: |
           ./gradlew :app:assemble${{ github.event.inputs.variant }} --no-daemon --max-workers=2 -Dorg.gradle.jvmargs="-Xmx4g -XX:MaxMetaspaceSize=1g"
 
-      - name: Upload APK
+      - name: Upload APK to GitHub artifact
         uses: actions/upload-artifact@v4
         with:
           name: ejemma-matrix-${{ github.event.inputs.variant }}
           path: app/build/outputs/apk/gplay/release/*.apk
           if-no-files-found: error
-
-      - name: Publish release asset
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh release create latest --title "EJEMMA Matrix Latest" --notes "Latest build" --repo ${{ github.repository }} 2>/dev/null || true
-          gh release upload latest app/build/outputs/apk/gplay/release/*.apk --clobber --repo ${{ github.repository }}
 
       - name: Deploy APK to public download server
         env:
