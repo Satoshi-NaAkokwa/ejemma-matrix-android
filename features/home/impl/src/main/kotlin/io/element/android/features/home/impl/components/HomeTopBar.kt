@@ -257,6 +257,20 @@ private fun RowScope.RoomListMenuItems(
                     }
                 )
             }
+            DropdownMenuItem(
+                onClick = {
+                    showMenu = false
+                    onWalletClick()
+                },
+                text = { Text(stringResource(id = R.string.action_wallet)) },
+                leadingIcon = {
+                    Text(
+                        text = "₵",
+                        style = ElementTheme.typography.fontHeadingMdBold,
+                        color = ElementTheme.colors.iconSecondary,
+                    )
+                }
+            )
         }
     }
 }
