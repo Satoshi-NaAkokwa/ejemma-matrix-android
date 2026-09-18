@@ -155,7 +155,7 @@ class HomeFlowNode(
                 callback.navigateToBugReport()
             }
             RoomListMenuAction.Wallet -> {
-                activity.startActivity(Intent().setClassName(activity, "io.element.android.x.wallet.WalletActivity"))
+                // Wallet action removed
             }
         }
     }
