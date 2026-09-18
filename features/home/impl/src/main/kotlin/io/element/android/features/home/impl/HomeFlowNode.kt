@@ -154,9 +154,6 @@ class HomeFlowNode(
             RoomListMenuAction.ReportBug -> {
                 callback.navigateToBugReport()
             }
-            RoomListMenuAction.Wallet -> {
-                activity.startActivity(Intent().setClassName(activity, "io.element.android.x.wallet.WalletActivity"))
-            }
         }
     }
 
